@@ -17,6 +17,7 @@ Requires(postun):	rpm-helper
 Obsoletes:	parser_server
 Provides:	parser_server
 BuildArch:	noarch
+Buildroot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This is a parsers server, allowing to run parsers on remote computers easily.
