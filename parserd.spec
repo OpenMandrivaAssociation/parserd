@@ -1,6 +1,6 @@
 %define name	parserd
-%define version	2.1.4
-%define release	%mkrel 4
+%define version	2.2.1
+%define release	%mkrel 1
 
 Name:		%{name}
 Version:	%{version}
@@ -8,8 +8,8 @@ Release:	%{release}
 Summary:	A server of parsers
 License:	Artistic or GPL
 Group:		Sciences/Computer science
-Source:		ftp://ftp.inria.fr/INRIA/Projects/Atoll/Eric.Clergerie/TAG/%{name}-%{version}.tar.bz2
-Url:		http://atoll.inria.fr/packages/packages.html#parser_server
+Url:		https://gforge.inria.fr/projects/lingwb/
+Source:		https://gforge.inria.fr/frs/download.php/5679/%{name}-%{version}.tar.gz
 Requires(pre):		rpm-helper
 Requires(post):		rpm-helper
 Requires(preun):	rpm-helper
@@ -80,6 +80,8 @@ rm -rf %{buildroot}
 %config(noreplace) %{_sysconfdir}/%{name}.conf
 %{_bindir}/*
 %{_sbindir}/%{name}
+%{_sbindir}/%{name}_service
+%{_libdir}/pkgconfig/parserd.pc
 %{_datadir}/%{name}
 %{_mandir}/man1/register_parsers.1*
 
