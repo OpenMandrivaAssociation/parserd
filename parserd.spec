@@ -1,6 +1,6 @@
 %define name	parserd
 %define version	2.2.1
-%define release	%mkrel 2
+%define release	%mkrel 1
 
 Name:		%{name}
 Version:	%{version}
@@ -93,3 +93,55 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_var}/www/cgi-bin/*
 
+
+
+%changelog
+* Thu Jul 09 2009 Guillaume Rousse <guillomovitch@mandriva.org> 2.2.1-1mdv2010.0
++ Revision: 393719
+- new version
+
+* Wed Jul 30 2008 Thierry Vignaud <tvignaud@mandriva.com> 2.1.4-4mdv2009.0
++ Revision: 255042
+- rebuild
+
+* Fri Dec 21 2007 Olivier Blin <oblin@mandriva.com> 2.1.4-2mdv2008.1
++ Revision: 136639
+- restore BuildRoot
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - kill re-definition of %%buildroot on Pixel's request
+    - import parserd
+
+
+* Tue Aug 29 2006 Guillaume Rousse <guillomovitch@mandriva.org> 2.1.4-2mdv2007.0
+- Rebuild
+
+* Fri Mar 24 2006 Guillaume Rousse <guillomovitch@mandriva.org> 2.1.4-1mdk
+- new version
+- %%mkrel
+
+* Mon Jun 13 2005 Guillaume Rousse <guillomovitch@mandriva.org> 2.1.3-1mdk 
+- new version
+- spec cleanup
+- requires
+- init script is not configuration
+
+* Fri Feb 18 2005 Oden Eriksson <oeriksson@mandrakesoft.com> 2.1.1-2mdk
+- spec file cleanups, remove the ADVX-build stuff
+
+* Thu Dec 02 2004 Guillaume Rousse <guillomovitch@mandrake.org> 2.1.1-1mdk 
+- new version
+- name change
+- drop patch, fixed upstream
+- cgi and modperl viewver subpackages
+- create dedicated user
+- better summary and description
+
+* Mon Nov 29 2004 Guillaume Rousse <guillomovitch@mandrake.org> 2.0.2-3mdk 
+- fix buildrequires
+
+* Mon Nov 29 2004 Guillaume Rousse <guillomovitch@mandrake.org> 2.0.2-2mdk 
+- install init script
+
+* Tue Nov 23 2004 Guillaume Rousse <guillomovitch@mandrake.org> 2.0.2-1mdk 
+- first mdk release
