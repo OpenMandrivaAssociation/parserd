@@ -1,6 +1,6 @@
 %define name	parserd
 %define version	2.2.1
-%define release	%mkrel 1
+%define release	2
 
 Name:		%{name}
 Version:	%{version}
