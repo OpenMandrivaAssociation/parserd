@@ -19,6 +19,11 @@ Provides:	parser_server
 BuildArch:	noarch
 Buildroot:	%{_tmppath}/%{name}-%{version}
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 This is a parsers server, allowing to run parsers on remote computers easily.
 A set of web wievers, CGI and mod_perl based, are also availables.
